@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression]" guice-stage="DEVELOPMENT">
+  <test name="regressionTest(failed)">
+    <classes>
+      <class name="com.qa.Dream11.testcases.RegistrationScreenTest">
+        <methods>
+          <include name="login"/>
+          <include name="close"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.qa.Dream11.testcases.RegistrationScreenTest -->
+    </classes>
+  </test> <!-- regressionTest(failed) -->
+</suite> <!-- Failed suite [regression] -->
