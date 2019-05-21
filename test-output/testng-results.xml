@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-26T12:16:08Z" name="Default suite" finished-at="2019-04-26T12:16:42Z" duration-ms="34156">
+  <suite started-at="2019-05-10T05:41:43Z" name="Suite" finished-at="2019-05-10T05:43:29Z" duration-ms="106068">
     <groups>
     </groups>
-    <test started-at="2019-04-26T12:16:08Z" name="Default test" finished-at="2019-04-26T12:16:42Z" duration-ms="34156">
+    <test started-at="2019-05-10T05:41:43Z" name="Test" finished-at="2019-05-10T05:43:29Z" duration-ms="106068">
       <class name="com.qa.Dream11.testcases.RegistrationScreenTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.Dream11.testcases.RegistrationScreenTest@525f1e4e]" started-at="2019-04-26T17:46:08Z" name="start" finished-at="2019-04-26T17:46:14Z" duration-ms="5459" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.Dream11.testcases.RegistrationScreenTest@52aa2946]" started-at="2019-05-10T11:11:43Z" name="start" finished-at="2019-05-10T11:11:48Z" duration-ms="5034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="login()[pri:0, instance:com.qa.Dream11.testcases.RegistrationScreenTest@525f1e4e]" started-at="2019-04-26T17:46:14Z" name="login" finished-at="2019-04-26T17:46:42Z" duration-ms="28684" status="FAIL">
+        <test-method signature="login()[pri:0, instance:com.qa.Dream11.testcases.RegistrationScreenTest@52aa2946]" started-at="2019-05-10T11:11:48Z" name="login" finished-at="2019-05-10T11:13:29Z" duration-ms="101019" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[1]/button"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='DD']"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Bhushan-More.local', ip: 'fe80:0:0:0:8fb:d2ef:20a0:c087%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '12'
+System info: host: 'Bhushan-More.local', ip: 'fe80:0:0:0:1470:c78b:cc00:3b80%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/3h/hnsx4mp56hn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50200}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: b78ad416e824a78335ba6cd225c0fb6b
-*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[1]/button}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: /var/folders/3h/hnsx4mp56hn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50001}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 306eab817eaccf1b2055820fc9b0d7cb
+*** Element info: {Using=xpath, value=//input[@placeholder='DD']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[1]/button"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='DD']"}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Bhushan-More.local', ip: 'fe80:0:0:0:8fb:d2ef:20a0:c087%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '12'
+System info: host: 'Bhushan-More.local', ip: 'fe80:0:0:0:1470:c78b:cc00:3b80%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/3h/hnsx4mp56hn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50200}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: b78ad416e824a78335ba6cd225c0fb6b
-*** Element info: {Using=xpath, value=/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[1]/button}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: /var/folders/3h/hnsx4mp56hn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50001}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 306eab817eaccf1b2055820fc9b0d7cb
+*** Element info: {Using=xpath, value=//input[@placeholder='DD']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -55,8 +55,8 @@ Session ID: b78ad416e824a78335ba6cd225c0fb6b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.qa.Dream.util.GenerateData.createTeam(GenerateData.java:30)
-	at com.qa.Dream11.testcases.RegistrationScreenTest.login(RegistrationScreenTest.java:42)
+	at com.qa.Dream.util.GenerateData.createTeam(GenerateData.java:138)
+	at com.qa.Dream11.testcases.RegistrationScreenTest.login(RegistrationScreenTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,11 +88,11 @@ Session ID: b78ad416e824a78335ba6cd225c0fb6b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.Dream11.testcases.RegistrationScreenTest@525f1e4e]" started-at="2019-04-26T17:46:42Z" name="close" finished-at="2019-04-26T17:46:42Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.qa.Dream11.testcases.RegistrationScreenTest@52aa2946]" started-at="2019-05-10T11:13:29Z" name="close" finished-at="2019-05-10T11:13:29Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.qa.Dream11.testcases.RegistrationScreenTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

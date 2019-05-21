@@ -1,5 +1,8 @@
 package com.qa.Dream11.testcases;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -25,7 +28,7 @@ public class RegistrationScreenTest extends TestBase {
 	public void start() {
 
 		initialization();
-		faker = new Faker(); // user random function
+
 		dataOBJ = new GenerateData();
 		RegisterOBJ = new RegisterScreen();
 	}
@@ -34,11 +37,7 @@ public class RegistrationScreenTest extends TestBase {
 	public void login() throws InterruptedException {
 
 		RegisterOBJ.registerUser();
-
-		List<WebElement> listofRounds = driver.findElements(By.xpath("//div[@class='matchCardMain_954a1']")); // selecting
-																												// round
-		listofRounds.get(0).click();
-
+		dataOBJ.selectRound();
 		dataOBJ.createTeam();
 	}
 

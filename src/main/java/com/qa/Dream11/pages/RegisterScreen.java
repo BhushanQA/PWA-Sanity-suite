@@ -18,33 +18,22 @@ public class RegisterScreen extends TestBase {
 	public Faker faker;
 	public GenerateData dataOBJ;
 
-//	public RegisterScreen()
-//	{
-//		faker = new Faker();
-//		dataOBJ = new GenerateData();
-//	}
-
 	public void registerUser() throws InterruptedException {
 		GenerateData dataOBJ = new GenerateData();
 		Faker faker = new Faker();
 		String phoneNumber = dataOBJ.generatingRandomNumber(9);
-		System.out.println(phoneNumber);
 
 		driver.findElement(By.id("login_desktop")).click();
-	//	new WebDriverWait(driver, 90).until(ExpectedConditions.visibilityOfElementLocated(By.id("login_desktop"))).click();
 
 		driver.findElement(By.xpath("//a[@class='registerLink_cf5d8']")).click(); // register link
-		//new WebDriverWait(driver, 90).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("login_desktop"))).isDisplayed();
-		System.out.println("After register link");
 
 		List<WebElement> Element = driver.findElements(By.xpath("//input"));
-		System.out.println("Input fields = " + Element.size());
 
 		Element.get(0).sendKeys("9" + phoneNumber);
 		String emailId = "a" + phoneNumber + "@gmail.com";
-		int length = emailId.length();
+
 		Element.get(1).sendKeys(emailId);
-		Element.get(2).sendKeys("" + faker.internet().emailAddress() + "1a@");
+		Element.get(2).sendKeys(faker.internet().emailAddress() + "1a@");
 
 		driver.findElement(By.xpath("//button[@class='new-button fullWidthGreenButton_5063b']")).click();
 

@@ -47,7 +47,7 @@ public class TestBase {
 		
 		if(browserName.equals("chrome")){
 			String directory = System.getProperty("user.dir");
-			System.setProperty("webdriver.chrome.driver", directory+"/Drivers/chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", directory+"/Drivers/chromedriverversion.exe");	
 			driver = new ChromeDriver(); 
 
 			driver.manage().window().maximize();

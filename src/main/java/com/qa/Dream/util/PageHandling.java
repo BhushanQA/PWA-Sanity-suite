@@ -46,9 +46,7 @@ public class PageHandling extends TestBase {
 	public void scrollTopBottom(Boolean TopBottom) throws InterruptedException {
 	       js = (JavascriptExecutor) driver;
 
-	       // Dimension dimension = driver.manage().window().getSize();
-	       // int height = dimension.getHeight();
-	       //
+	      
 	       if (TopBottom) {
 	           js.executeScript("window.scrollBy(0, -5000);");
 	           Thread.sleep(1000);

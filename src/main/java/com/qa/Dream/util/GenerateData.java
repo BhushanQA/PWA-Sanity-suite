@@ -25,6 +25,27 @@ public class GenerateData extends TestBase {
 		return generatedString;
 	}
 
+	// ---------------------------------Select round
+
+	public void selectRound() {
+		
+		List<WebElement> listofRounds = driver.findElements(By.xpath("//div[@class='matchCardMain_954a1']"));
+		int size = listofRounds.size();
+		--size;
+		listofRounds.get(size).click();
+		
+		
+//		
+//		List<WebElement> activeMatches = driver.findElements(By.xpath("//div[contains(text(),'h left')]"));
+//
+//		System.out.println(activeMatches.get(0));
+//
+//		activeMatches.get(0).click();
+
+	}
+
+	// --------------------------------------------------------------------------------
+
 	public void createTeam() throws InterruptedException {
 
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[1]/button")).click();
@@ -62,23 +83,14 @@ public class GenerateData extends TestBase {
 		List<WebElement> AR = driver.findElements(By.xpath("//i[contains(text(),'add')]"));
 		System.out.println("All rounder = " + AR.size());
 
-
-
 		System.out.println("beeeee");
-
-		// AR.get(0).click();
-		// AR.get(1).click();
 
 		for (int i = AR.size(); i >= AR.size(); i--) {
 			int index = i;
 			--index;
 			WebElement ARounder = AR.get(index);
-			// boolean result = ARounder.isDisplayed();
-			// System.out.println("Boolean result" + result);
 
 			ARounder.click();
-
-
 
 		}
 
@@ -106,7 +118,6 @@ public class GenerateData extends TestBase {
 
 		// -------------select captain--------------------
 
-
 		driver.navigate().refresh();
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//button[@class='new-button raisedGreenButton_20c05']")).click();
@@ -114,8 +125,6 @@ public class GenerateData extends TestBase {
 		List<WebElement> selectCaptain = driver
 				.findElements(By.xpath("//div[@class='rolesContainer_7991a']//div[contains(text(),'C')]"));
 		System.out.println("size of team =" + selectCaptain.size());
-
-	
 
 		selectCaptain.get(0).click();
 		selectCaptain.get(3).click();
@@ -139,7 +148,6 @@ public class GenerateData extends TestBase {
 		driver.findElement(By.xpath("//button[@class='btn btn--raised']")).click();
 
 		driver.findElement(By.xpath("//div[contains(text(),'Go Ahead')]")).click();
-
 
 	}
 }
