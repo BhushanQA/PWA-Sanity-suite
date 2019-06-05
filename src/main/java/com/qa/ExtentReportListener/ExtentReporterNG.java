@@ -26,6 +26,8 @@ public class ExtentReporterNG implements IReporter {
 			String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator
 				+ "Extent1.html", true);
+		
+		extent.addSystemInfo("Author", "Bhushan");
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();

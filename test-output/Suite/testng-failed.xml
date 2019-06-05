@@ -6,13 +6,13 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.qa.Dream11.testcases.RegistrationScreenTest">
+      <class name="com.qa.Dream11.testcases.RegressionPWA">
         <methods>
-          <include name="login"/>
-          <include name="close"/>
           <include name="start"/>
+          <include name="close"/>
+          <include name="createTeam"/>
         </methods>
-      </class> <!-- com.qa.Dream11.testcases.RegistrationScreenTest -->
+      </class> <!-- com.qa.Dream11.testcases.RegressionPWA -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

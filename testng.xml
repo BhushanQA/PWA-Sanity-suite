@@ -10,7 +10,7 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.qa.Dream11.testcases.RegistrationScreenTest"/>
+      <class name="com.qa.Dream11.testcases.RegressionPWA"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

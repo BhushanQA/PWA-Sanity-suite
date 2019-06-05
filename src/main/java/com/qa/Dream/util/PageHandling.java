@@ -1,9 +1,12 @@
 package com.qa.Dream.util;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.Dream11.base.TestBase;
 
@@ -11,6 +14,7 @@ public class PageHandling extends TestBase {
 
 	public Actions actionObject;
 	JavascriptExecutor js;
+	public static WebDriverWait wait;
 
 	public void scroll() {
 		Dimension dimensions = driver.manage().window().getSize();
@@ -60,6 +64,13 @@ public class PageHandling extends TestBase {
 	{
 	//	JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,-1000)");
+	}
+	
+	public WebElement waitForClickableElement(By selector) {
+		WebDriverWait wait = new WebDriverWait(driver,10000);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(selector));
+		
+		return element;
 	}
 
 }

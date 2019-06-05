@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [regression]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
   <test name="regressionTest(failed)">
     <classes>
-      <class name="com.qa.Dream11.testcases.RegistrationScreenTest">
+      <class name="com.qa.Dream11.testcases.RegressionPWA">
         <methods>
           <include name="login"/>
           <include name="close"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.qa.Dream11.testcases.RegistrationScreenTest -->
+      </class> <!-- com.qa.Dream11.testcases.RegressionPWA -->
     </classes>
   </test> <!-- regressionTest(failed) -->
 </suite> <!-- Failed suite [regression] -->

@@ -9,7 +9,7 @@
 
 	<test name="regressionTest">
 		<classes>
-			<class name="com.qa.Dream11.testcases.RegistrationScreenTest"></class>
+			<class name="com.qa.Dream11.testcases.RegressionPWA"></class>
 			
 		</classes>
 	</test>

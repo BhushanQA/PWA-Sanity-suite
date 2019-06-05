@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.Dream11.testcases.RegistrationScreenTest">
+      <class name="com.qa.Dream11.testcases.RegressionPWA">
         <methods>
           <include name="login"/>
           <include name="close"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.qa.Dream11.testcases.RegistrationScreenTest -->
+      </class> <!-- com.qa.Dream11.testcases.RegressionPWA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

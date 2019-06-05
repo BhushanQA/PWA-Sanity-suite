@@ -15,63 +15,59 @@ public class GenerateData extends TestBase {
 
 	public String generatingRandomAlphabeticString(int charlimit) {
 		String generatedString = RandomStringUtils.randomAlphabetic(charlimit);
-		System.out.println("String : " + generatedString);
 		return generatedString;
 	}
 
 	public String generatingRandomNumber(int charlimit) {
 		String generatedString = RandomStringUtils.randomNumeric(charlimit);
-		System.out.println("String : " + generatedString);
 		return generatedString;
 	}
 
 	// ---------------------------------Select round
 
 	public void selectRound() {
-		
+
 		List<WebElement> listofRounds = driver.findElements(By.xpath("//div[@class='matchCardMain_954a1']"));
 		int size = listofRounds.size();
-		--size;
-		listofRounds.get(size).click();
+	
 		
-		
-//		
-//		List<WebElement> activeMatches = driver.findElements(By.xpath("//div[contains(text(),'h left')]"));
-//
-//		System.out.println(activeMatches.get(0));
-//
-//		activeMatches.get(0).click();
+		// --size;
+		int size1 = size - 2;
+		listofRounds.get(size1).click();
 
 	}
 
 	// --------------------------------------------------------------------------------
 
 	public void createTeam() throws InterruptedException {
-
-		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div[2]/div[2]/div[1]/button")).click();
-		System.out.println("After skip");
+		
+		//Thread.sleep(5000);
+		
+		System.out.println("inside create team");
+		PageHandling pageHandle = new PageHandling();
+		WebElement skip = pageHandle.waitForClickableElement(By.xpath("//div[contains(text(),'Skip')]"));
+		
+		pageHandle.clickAnElement(skip);
+		//skip.click();
+		//driver.findElement(By.xpath("//div[contains(text(),'Skip')]")).click();
 
 		// -----------------------Select Wicket keeper----------------
 
 		List<WebElement> wicketkeeper = driver.findElements(By.xpath("//i[contains(text(),'add')]"));
 		wicketkeeper.get(0).click();
-		System.out.println("after list" + wicketkeeper.size());
 
 		// -----------Select batsman--------------------------------
 
 		driver.findElement(By.xpath("//div[contains(text(),'BAT')]")).click();
-		System.out.println("After click on Bat");
 
 		Thread.sleep(10000);
 
 		List<WebElement> Batsman = driver.findElements(By.xpath("//i[contains(text(),'add')]"));
-		System.out.println("Batsman = " + Batsman.size());
 
 		for (int i = 0; i < Batsman.size(); i++) {
 			WebElement bat = Batsman.get(i);
 			pageHandle.scrollTillWebElementDisplay(bat);
 			pageHandle.clickAnElement(bat);
-			System.out.println("i: " + i);
 		}
 
 		// ----------------select All rounder-----------------
@@ -81,9 +77,6 @@ public class GenerateData extends TestBase {
 		Thread.sleep(10000);
 
 		List<WebElement> AR = driver.findElements(By.xpath("//i[contains(text(),'add')]"));
-		System.out.println("All rounder = " + AR.size());
-
-		System.out.println("beeeee");
 
 		for (int i = AR.size(); i >= AR.size(); i--) {
 			int index = i;
@@ -100,7 +93,6 @@ public class GenerateData extends TestBase {
 		driver.findElement(By.xpath("//div[contains(text(),'BOWL')] ")).click();
 
 		List<WebElement> BL = driver.findElements(By.xpath("//i[contains(text(),'add')]"));
-		System.out.println("All rounder = " + BL.size());
 
 		for (int i = BL.size(); i > 0; i--) {
 			int index1 = i;
@@ -108,7 +100,6 @@ public class GenerateData extends TestBase {
 			WebElement Bowler = BL.get(index1);
 			pageHandle.scrollTillWebElementDisplay(Bowler);
 			pageHandle.clickAnElement(Bowler);
-			System.out.println("i: " + i);
 		}
 
 		// -----------click on continue-----------------
@@ -124,7 +115,6 @@ public class GenerateData extends TestBase {
 
 		List<WebElement> selectCaptain = driver
 				.findElements(By.xpath("//div[@class='rolesContainer_7991a']//div[contains(text(),'C')]"));
-		System.out.println("size of team =" + selectCaptain.size());
 
 		selectCaptain.get(0).click();
 		selectCaptain.get(3).click();
@@ -132,7 +122,6 @@ public class GenerateData extends TestBase {
 		driver.findElement(By.xpath("//button[@class='new-button raisedGreenButton_20c05']")).click();
 
 		List<WebElement> contestList = driver.findElements(By.xpath("//button[contains(@class,'smallGreen')]"));
-		System.out.println("contest list =" + contestList.size());
 		contestList.get(0).click();
 
 		driver.findElement(By.xpath("//input[@placeholder='DD']")).sendKeys("20");
@@ -142,7 +131,6 @@ public class GenerateData extends TestBase {
 		driver.findElement(By.xpath("//div[@class='form-field-link-content']")).click();
 
 		List<WebElement> stateList = driver.findElements(By.xpath("//div[@class='dialog-body']/div"));
-		System.out.println("State list =" + stateList.size());
 		stateList.get(0).click();
 
 		driver.findElement(By.xpath("//button[@class='btn btn--raised']")).click();
